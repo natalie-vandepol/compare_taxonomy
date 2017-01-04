@@ -1,8 +1,8 @@
-####
-#	Written by Natalie Vande Pol, Sept 29, 2016
-#	Modified Oct 4, 2016. KGM
-#	Script converts QIIME output taxonomy to standard output
-####
+#########################################################################
+#	Written by Natalie Vande Pol, Sept 29, 2016			#
+#	Modified Oct 4, 2016. KGM					#
+#	Script converts QIIME output taxonomy to standard output	#
+#########################################################################
 
 import sys, os
 
