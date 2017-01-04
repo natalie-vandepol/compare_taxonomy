@@ -1,18 +1,15 @@
-####
-#	Written by Natalie Vande Pol, Sept 29, 2016
-#	Edited 10-13-16
-#	Script converts RDP output taxonomy to standard output
-#	**MUST convert "\t\t" to "\t_\t" in text editor before using script**
-####
+#################################################################
+#	Written by Natalie Vande Pol, Sept 29, 2016		#
+#	Edited 10-13-16 by KGM					#
+#	Script converts RDP output taxonomy to standard output	#
+#################################################################
 
 import sys, os
 
-#input = open ("jump_taxonomy_rdp.txt", "r")
 input = open(sys.argv[1], "r")
 all_lines = input.readlines()
 input.close()
 
-#output = open("jump_rdp_to_same.txt", "w")
 output = open(".".join(os.path.splitext(sys.argv[1])[:-1])+"__final.txt","w")
 output.write("OTU_ID\tScore\tKingdom\tPhylum\tClass\tOrder\tFamily\tGenus\tSpecies\n")
 
