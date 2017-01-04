@@ -1,15 +1,16 @@
-################################################################################
-#	Written by Natalie Vande Pol
-#	October 18, 2016
-#	Requires 3 taxonomy files, in this tab-delimited format, with header:
-#		OTU	Confidence	Kingdom	Phylum	Class	Order	Family	Genus	Species
-#	Prompts for each input file
-#	For each taxonomic level, this script determines the most "popular"
-#	classification and produces an output file in the following format
-#		OTU	FILE_1	FILE_2	FILE_3
-#	where each file is given a '2' if it has the most popular value, a '1' for
-#	unique classifications, or a '0' if the level was empty
-################################################################################
+#################################################################################
+#	Written by Natalie Vande Pol						#
+#	October 18, 2016							#
+#	Requires 3 taxonomy files in tab-delimited format with header:		#
+#	 OTU\tConfidence\tKingdom\tPhylum\tClass\tOrder\tFamily\tGenus\tSpecies	#
+#	Prompts for each input file; file order maintained in output as below.	#
+#	For each taxonomic level, this script determines the most "popular"	#
+#	classification and produces an output file in the format:		#
+#		OTU	FILE_1	FILE_2	FILE_3					#
+#	where each file is given a '2' if it has the most popular value, a '1'	#
+#	for unique classifications, or a '0' if the level was empty		#
+#################################################################################
+
 
 def build_dict(filename):
 	file = open(filename, "r")
