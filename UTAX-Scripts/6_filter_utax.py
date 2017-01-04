@@ -1,8 +1,8 @@
-####
-#	Written by Natalie Vande Pol, Sept 26, 2016
-#	Edited 10-10-2016 KGM
-#	Script converts UTAX output taxonomy to standard output
-####
+#################################################################
+#	Written by Natalie Vande Pol, Sept 26, 2016		#
+#	Edited 10-10-2016 KGM					#
+#	Script converts UTAX output taxonomy to standard output	#
+#################################################################
 
 import sys, os
 
