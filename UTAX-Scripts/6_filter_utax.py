@@ -26,8 +26,6 @@ for i, line in enumerate(all_lines):
 	temp1 = line2.split(",")
 	j=1
 	new_line = [temp1[0]]
-	print temp1
-	print confid
 	while j<len(temp1):
 		if  "unidentified" in temp1[j] or float(confid[j-1]) < 0.5:
 			del confid[j-1:]
@@ -36,7 +34,6 @@ for i, line in enumerate(all_lines):
 			new_line.append(temp1[j])
 		j+=1
 
-	print confid
 	line2 = ",".join(new_line)
 
 	temp2 = line2.split(",")
