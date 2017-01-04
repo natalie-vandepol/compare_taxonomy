@@ -1,12 +1,12 @@
 #################################################################################
-#	Written by Natalie Vande Pol												#
-#	May 3, 2016																	#
-#																				#
-#	*  command line: python generaldb_to_QIIMEdb.py [path/filename(s)]			#
-#	*  accepts unlimited reference database files and splits them to fasta		#
-#	   and taxonomy files in the QIIME format									#
-#	*  output files written to original file location, the original filename	#
-#		appended "__QIIME.fasta" and "__QIIME_taxonomy.txt"						#
+#	Written by Natalie Vande Pol						#
+#	May 3, 2016								#
+#										#
+#	*  command line: python generaldb_to_QIIMEdb.py [path/filename(s)]	#
+#	*  accepts unlimited reference database files and splits them to fasta	#
+#	   and taxonomy files in the QIIME format				#
+#	*  output files written to original file location, the original		#
+#	   filename appended "__QIIME.fasta" and "__QIIME_taxonomy.txt"		#
 #################################################################################
 
 import sys, os
