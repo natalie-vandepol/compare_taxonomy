@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #used to convert a taxonomy in tab-delimited file containing the taxonomic hierarchical structure to RDP Classifier taxonomy training file
 #Approach:each taxon is uniquely identified by the combination of its tax id and depth from the root rank, its attributes comprise: name, parent taxid, and level of depth from the root rank. 
+
 import sys, string
 if not len(sys.argv) == 2:
 	print "lineage2taxTrain.py taxonomyFile"
