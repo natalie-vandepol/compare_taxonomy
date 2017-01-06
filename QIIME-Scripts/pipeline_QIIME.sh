@@ -12,7 +12,7 @@ parallel_assign_taxonomy_rdp.py -i /path_to_files/peay_otus_sampled.fasta -t /pa
 
 ### post-assignment filtering
 ### standardize taxonomy table format
-python filter_qiime.py peay_taxonomy_qiime.txt peay_taxonomy_qiime__final.txt
+python filter_QIIME.py peay_taxonomy_qiime.txt peay_taxonomy_qiime__final.txt
 
 
 
