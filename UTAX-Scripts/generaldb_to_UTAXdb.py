@@ -5,6 +5,8 @@
 #	*  command line: python generaldb_to_UTAXdb.py [path/filename(s)]	#
 #	*  accepts unlimited reference database files and converts them to a	#
 #	   general format							#
+#	*  filters out any taxonomic levels that are "unknown", "unidentified",	#
+#	   or "Incertae_sedis" and any sequences whose kingdom is not "Fungi".	#
 #	*  output files written to original file location, appended		#
 #	   "__UTAX.fasta"							#
 #################################################################################
