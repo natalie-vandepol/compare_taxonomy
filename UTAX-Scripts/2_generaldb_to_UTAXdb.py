@@ -16,21 +16,21 @@ for arg in sys.argv[1:]:
 	all_lines = gen.readlines()
 	gen.close()
 
-	fastatax = open(".".join(os.path.splitext(arg)[:-1])+"__UTAX.fasta","w")
+	fastatax = open(".".join(os.path.splitext(arg)[:-1])+"__UTAX_combined.fasta","w")
 	for i, line in enumerate(all_lines):
 		if line[0]==">":
-			temp = line[1:].split("|")
-			utax_name = temp[1]+"|"+temp[2]
-			utax_taxa = temp[4][1:].strip().replace("__",":").replace(";",",")
+			temp0 = line[1:].split("|")
+			utax_name = temp0[1]+"|"+temp0[2]
+			utax_taxa = temp0[4][1:].strip().replace("__",":").replace(";",",")
 			
-			temp2 = utax_taxa.strip().split(",")
-			if temp2[0].startswith(">"):
-				temp3 = [x for x in temp2 if "unidentified" not in x]
-				temp4 = [y for y in temp3 if "Incertae_sedis" not in y]
-				temp5 = [z for z in temp4 if "unknown" not in z]
-				new_name = ",".join(temp5)
-				
-			fastatax.write(">"+utax_name+";tax=d"+utax_taxa+";\n")
-		else:
-			fastatax.write(line)
+			temp_line = ">"+utax_name+";tax=d"+utax_taxa+";\n"
+			temp = temp_line.strip().split(",")
+			if temp[0].endswith("Fungi"):
+				temp2 = [x for x in temp if "unidentified" not in x]
+				temp3 = [y for y in temp2 if "Incertae_sedis" not in y]
+				temp4 = [z for z in temp3 if "unknown" not in z]
+				utax_taxa = ",".join(temp4)
+							
+				seq = all_lines[i+1].upper()
+				fastatax.write(utax_taxa+"\n"+seq)
 	fastatax.close()
