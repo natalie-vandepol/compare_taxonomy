@@ -3,10 +3,10 @@
 #	May 3, 2016								#
 #										#
 #	*  command line: python generaldb_to_UTAXdb.py [path/filename(s)]	#
-#	*  accepts unlimited reference database files and splits them to fasta	#
-#	   and taxonomy files in the QIIME format				#
-#	*  output files written to original file location, the original		#
-#	   filename appended "__UTAX.fasta" and "__UTAX_taxonomy.txt"		#
+#	*  accepts unlimited reference database files and converts them to a	#
+#	   general format							#
+#	*  output files written to original file location, appended		#
+#	   "__UTAX.fasta"							#
 #################################################################################
 
 import sys, os
@@ -16,7 +16,7 @@ for arg in sys.argv[1:]:
 	all_lines = gen.readlines()
 	gen.close()
 
-	fastatax = open(".".join(os.path.splitext(arg)[:-1])+"__UTAX_combined.fasta","w")
+	fastatax = open(".".join(os.path.splitext(arg)[:-1])+"__UTAX.fasta","w")
 	for i, line in enumerate(all_lines):
 		if line[0]==">":
 			temp0 = line[1:].split("|")
