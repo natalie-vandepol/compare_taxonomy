@@ -1,15 +1,10 @@
 ### process raw reads to generate OTUs 
 1_QC_OTU-picking.sh 
 
-### format general fasta
-python 2_generaldb_to_UTAXdb.py sh_general_release_31.01.2016.fasta
+### format general fasta & create UTAX-DB training files
+python generaldb_to_UTAXdb.py sh_general_release_31.01.2016.fasta
 # outputs:
 sh_general_release_31.01.2016__UTAX.fasta
-
-### create UTAX-DB training files
-python 3_filter_utaxDB.py sh_general_release_31.01.2016__UTAX.fasta
-# outputs:
-sh_general_release_31.01.2016__UTAX__filtered.fasta
 
 ### train the classifier
 cd /mnt/research/rdp/public/thirdParty
