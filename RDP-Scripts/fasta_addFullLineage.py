@@ -1,4 +1,8 @@
 #!/usr/bin/python
+
+# this script is part of Ribosomal Database Project (RDP) 
+
+
 import sys, string
 if len(sys.argv) != 3:
 	print 'addFullLineage.py taxonomyFile fastaFile'
