@@ -5,6 +5,7 @@
 * [**Abstract**](#abstract)
 * [**Study Purpose**](#study-purpose)
 * [**Script Purpose**](#script-purpose)
+* [**Pipeline**](#pipeline)
 * [**System Requirements**](#sys-req)
 
 
@@ -33,6 +34,12 @@ We set out to test whether the most commonly used taxonomic classifiers generate
 The first script in this pipeline accepts database files in FASTA format and re-generates that database in formats compatible with the RDP, UTAX, and SINTAX classifiers. It also calls on two scripts to generate files for training the RDP classifier.
 
 The second script accepts the classified OTU taxonomy outputs from each of the three classifiers, filters by confidence score, and reformats them to a standardized output. In addition, it compares the standardized classifications to generate a consensus taxonomy based on all three classifiers.
+
+<br />
+
+<a name="pipeline"></a>
+## Pipeline
+
 
 <br />
 
