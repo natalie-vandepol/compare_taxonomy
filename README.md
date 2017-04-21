@@ -27,7 +27,7 @@ One of the most crucial steps in high-throughput sequence based microbiome studi
 <a name="study-purpose"></a>
 Study Purpose
 --------
-We set out to test whether the most commonly used taxonomic classifiers generate similar profiles of the fungal community. To do so we used two published MiSeq ITS datasets and compared the standalone command line Ribosomal Database Project Classifier (not to be confused with the Ribosomal Database Project) (Wang et al. 2007; Cole et al. 2013),  UTAX (Edgar 2010; 2013), and SINTAX (Edgar 216).
+We set out to test whether the most commonly used taxonomic classifiers generate similar profiles of the fungal community. To do so we used two published MiSeq ITS datasets and compared the standalone command line [Ribosomal Database Project Classifier](http://rdp.cme.msu.edu/) (not to be confused with the Ribosomal Database Project) (Wang et al. 2007; Cole et al. 2013),  [UTAX](http://www.drive5.com/usearch/manual/utax_algo.html) (Edgar 2010; 2013), and SINTAX (Edgar 2016).
 
 
 
