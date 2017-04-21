@@ -12,10 +12,10 @@ Table of Contents
 <a name="authors"></a>
 Authors
 --------
-* "Kristi Gdanetz MacCready"
-* "Natalie Vande Pol"
-* "Gregory Bonito"
-* "Gian Maria Niccolò Benucci"
+* [Kristi Gdanetz MacCready](https://github.com/gdanetzk)
+* [Natalie Vande Pol](https://github.com/natalie-vandepol)
+* [Gregory Bonito](https://www.researchgate.net/profile/Gregory_Bonito)
+* [Gian Maria Niccolò Benucci](https://github.com/Gian77)
 
 
 <a name="abstract"></a>
