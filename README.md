@@ -5,6 +5,7 @@ Table of Contents
 * [**Authors**](#authors)
 * [**Abstract**](#abstract)
 * [**Study Purpose**](#study-purpose)
+* [**Pipeline**](#pipeline)
 * [**Script Purpose**](#script-purpose)
 * [**System Requirements**](#sys-req)
 
@@ -12,10 +13,10 @@ Table of Contents
 <a name="authors"></a>
 Authors
 --------
-* "Kristi Gdanetz MacCready"
-* "Natalie Vande Pol"
-* "Gregory Bonito"
-* "Gian Maria Niccolò Benucci"
+* [Kristi Gdanetz MacCready](https://github.com/gdanetzk)
+* [Natalie Vande Pol](https://github.com/natalie-vandepol)
+* [Gregory Bonito](https://www.researchgate.net/profile/Gregory_Bonito)
+* [Gian Maria Niccolò Benucci](https://github.com/Gian77)
 
 <a name="abstract"></a>
 Abstract
@@ -25,12 +26,30 @@ One of the most crucial steps in high-throughput sequence based microbiome studi
 <a name="study-purpose"></a>
 Study Purpose
 --------
-We set out to test whether the most commonly used taxonomic classifiers generate similar profiles of the fungal community. To do so we used two published MiSeq ITS datasets and compared the standalone command line Ribosomal Database Project Classifier; hereafter just abbreviated as RDP - not to be confused with the Ribosomal Database Project (Wang et al. 2007; Cole et al. 2013),  UTAX (Edgar 2010; 2013), and SINTAX (Edgar 216).
+We set out to test whether the most commonly used taxonomic classifiers generate similar profiles of the fungal community. To do so we used two published MiSeq ITS datasets and compared the standalone command line [Ribosomal Database Project Classifier](http://rdp.cme.msu.edu/) (Wang et al. 2007; Cole et al. 2013),  [UTAX](http://www.drive5.com/usearch/manual/utax_algo.html) (Edgar 2010; 2013), and [SINTAX](http://biorxiv.org/content/early/2016/09/09/074161) (Edgar 2016).
+
+<a name="pipeline"></a>
+Pipeline
+--------
+The analysis requires four general steps: 
+(1) Sequence QC and OTU-picking 
+(2) Pre-taxonomy assignment database formatting and training
+(3) Taxonomy assignment
+(4) Post-taxonmy assignment OTU processing and filtering
 
 <a name="script-purpose"></a>
 Script Purpose
 --------
+otu_processing.sh - steps used in this study to sub-sample reads, filter and quality-control reads, assign reads to OTUs, and sub-sample OTUs. 
+MasterScript1.py - The first Master script in this pipeline accepts database files in FASTA format and re-generates that database in formats compatible with the RDP, UTAX, and SINTAX classifiers. It also calls on two scripts to generate files for training the RDP classifier.
+Taxonomy_pipeline.sh - The second script requires previous installation of RDP, UTAX, and SINTAX. Taxonomy inputs and outputs will be in the same folder by default. 
+MasterScript2.py - The second Master script accepts the classified OTU taxonomy outputs from each of the three classifiers, filters by confidence score, and reformats them to a standardized output. In addition, it compares the standardized classifications to generate a consensus taxonomy based on all three classifiers.
 
 <a name="sys-req"></a>
 System Requirements
 --------
+* Python version 2.6
+* [PEAR version 0.9.8](http://sco.h-its.org/exelixis/web/software/pear/) (Zhang et al. 2014)
+* [USEARCH version 8](http://drive5.com/usearch/manual8.1/) (Edgar et al. 2011; Edgar 2013)
+* [RDP version 11](https://github.com/rdpstaff/classifier) (Cole et al. 2013)
+* [USEARCH version 9](http://drive5.com/usearch/manual/whatsnewv9.html) (Edgar 2016)
