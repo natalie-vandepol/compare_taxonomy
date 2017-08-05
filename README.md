@@ -1,4 +1,4 @@
-# Fungal microbiomes: strategies for improving taxonomy resolution of environmental sequences
+# Fungal microbiomes: a strategy for improved taxonomic resolution of environmental ITS sequences 
 
 Table of Contents
 --------
@@ -7,6 +7,7 @@ Table of Contents
 * [**Study Purpose**](#study-purpose)
 * [**Pipeline**](#pipeline)
 * [**System Requirements**](#sys-req)
+* [**Supplemental Files**](#sys-req)
 
 
 <a name="authors"></a>
@@ -45,3 +46,16 @@ System Requirements
 * [USEARCH version 8](http://drive5.com/usearch/manual8.1/) (Edgar et al. 2011; Edgar 2013)
 * [RDP version 11](https://github.com/rdpstaff/classifier) (Cole et al. 2013)
 * [USEARCH version 9](http://drive5.com/usearch/manual/whatsnewv9.html) (Edgar 2016)
+
+<a name="sys-req"></a>
+Supplemental Files
+--------
+* Supplementary File 1. Detailed workflow - implementation of code and scripts for sequence QC and OTU-picking, database formatting and trimming, taxonomy assignment, and post-taxonomy assignment filtering.
+* Supplementary File 2. otu_processing.sh - Code for sequence QC and OTU-picking.
+* Supplementary File 3. subscript_fasta_addFullLineage.py - First script required for training of RDP classifier.
+* Supplementary File 4. subscript_lineage2taxonomyTrain.py - Second script required for training of RDP classifier.
+* Supplementary File 5. FormatRefDB.py - Required for training of all classifiers and formatting of reference database.
+* Supplementary File 6. taxonomy_pipeline.sh - Code for taxonomy assignment.
+* Supplementary File 7. CombineTaxonomy.py - Python tool to improve taxonomy assignment of OTUs.
+* Supplementary File 8. Import.R - Code used to generate barplots.
+* Supplementary File 9. Fasta file with 500 OTUs as an example dataset to test the python tool.
