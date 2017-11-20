@@ -1,0 +1,16 @@
+# configuration file for CONSTAX.sh
+
+# specify location of the reference database fasta within the 'DB' directory
+ref_database="sh_general_release_31.01.2016.fasta"
+
+# define the location of the otu file within the 'otus' directory
+otu_file="/test_data/ITS1_BC_UN_500_otu.fasta"
+
+# set the confidence threshold
+conf="0.8"
+
+
+
+
+
+
