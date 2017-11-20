@@ -15,7 +15,7 @@ Authors
 --------
 * [Kristi Gdanetz MacCready](https://github.com/gdanetzk)
 * [Gian Maria Niccolò Benucci](https://github.com/Gian77)
-* [Natalie Vande Pol](https://github.com/natalie-vandepol)
+* [Natalie VandePol](https://github.com/natalie-vandepol)
 * [Gregory Bonito](https://www.researchgate.net/profile/Gregory_Bonito)
 
 
@@ -50,6 +50,7 @@ System Requirements
 * [USEARCH version 8](http://drive5.com/usearch/manual8.1/) (Edgar et al. 2011; Edgar 2013)
 * [RDP version 11](https://github.com/rdpstaff/classifier) (Cole et al. 2013)
 * [USEARCH version 9/10](http://drive5.com/usearch/manual/whatsnewv9.html) (Edgar 2016)
+* [R and/or R-Studio](https://www.r-project.org)
 
 <a name="sys-req"></a>
 Supplemental Files
