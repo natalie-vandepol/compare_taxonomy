@@ -25,7 +25,6 @@ Abstract
 
 One of the most crucial steps in high-throughput sequence-based microbiome studies is the taxonomic assignment of sequences belonging to operational taxonomic units. Without taxonomic classification, functional and biological information of microbial communities cannot be inferred or interpreted. The internal transcribed spacer (ITS) region of the ribosomal DNA is the conventional marker region for fungal community studies. While bioinformatics pipelines that cluster reads into operational taxonomic units (OTUs) have received much attention in the literature, less attention has been given to the taxonomic classification of these sequences, upon which biological inference is dependent. Here we compare how three common fungal OTU taxonomic assignment tools (RDP Classifier, UTAX, and SINTAX) handle ITS fungal sequence data. The classification power, defined as the proportion of assigned operational taxonomic units at a given taxonomic rank, varied among the classifiers. Classifiers were generally consistent (assignment of the same taxonomy to a given operational taxonomic unit) across datasets and ranks; a small number of operational taxonomic units were assigned unique classifications across programs. We developed CONSTAX (CONSensus TAXonomy), a Python tool that compares taxonomic classifications of the three programs and merges them into an improved consensus taxonomy. This tool also produces summary classification outputs that are useful for downstream analyses. Our results demonstrate that independent taxonomy assignment tools classify unique members of the fungal community, and greater classification power is realized by generating consensus taxonomy of available classifiers with CONSTAX.
 
-
 <a name="study-purpose"></a>
 Study Purpose
 --------
@@ -34,6 +33,7 @@ We set out to test whether the most commonly used taxonomic classifiers generate
 <a name="pipeline"></a>
 Pipeline
 --------
+
 #### The analysis requires four general steps to go from raw sequences to a consesus taxonomy: 
 1. Sequence QC and OTU-picking 
 2. Database formatting and training 
@@ -54,7 +54,7 @@ System Requirements
 <a name="sys-req"></a>
 Supplemental Files
 --------
+
 * Supplementary File 1. CONSTAX.zip - download and unzip to use CONSTAX
 * Supplementary File 2. CONSTAX Tutorial
 * Supplementary File 3. otu_processing.sh - Code for sequence QC and OTU-picking.
-
