@@ -129,9 +129,6 @@ Each run of *constax.sh* will create three directories in the CONSTAX directory:
 The R code below is also called by *constax.sh* and will generate a barplot similar to those shown in Figure 2 using the *CountClassified.txt* file. 
 
 ```{r eval=FALSE}
-library(dplyr)
-library(ggplot2)
-
 if(!require(ggplot2)){
   install.packages("ggplot2")
   library(ggplot2)
