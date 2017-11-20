@@ -1,13 +1,10 @@
----
-title: 'CONSTAX: a tool for improved taxonomic resolution of environmental fungal
-  ITS sequences'
-author: "Supplemental File 1"
-date: "Gdanetz, Benucci, VandePol, Bonito"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
----
+***
+# __CONSTAX Tutorial__
+***
+
+#### From: 'CONSTAX: a tool for improved taxonomic resolution of environmental fungal ITS sequences'
+#### Supplemental File 1 - CONSTAX Tutorial
+#### Authors: Gdanetz, Benucci, VandePol, Bonito
 
 ***
 
@@ -21,9 +18,6 @@ Steps 2 through 4 are automated through *constax.sh* and implemented in the CONS
 
 ***
 
-# __CONSTAX Tutorial__
-
-***
 ## __Step 1:__ Sequence QC and OTU-picking.
 Use of CONSTAX assumes familarity with OTU-processing pipelines used in amplicon-sequence based microbial community studies. The QC and OTU-picking steps provided here are for reproducibility using the test datasets. If beginning with raw sequence files, follow the OTU-picking steps below. If beginning with OTUs, skip to Step 2. The code for QC and OTU-Picking is availble in Supplemental File 3. 
 
