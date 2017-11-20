@@ -54,7 +54,7 @@ System Requirements
 <a name="sys-req"></a>
 Supplemental Files
 --------
-* Supplementary File 1. CONSTAX.zip
+* Supplementary File 1. CONSTAX.zip - download and unzip to use CONSTAX
 * Supplementary File 2. CONSTAX Tutorial
 * Supplementary File 3. otu_processing.sh - Code for sequence QC and OTU-picking.
 
