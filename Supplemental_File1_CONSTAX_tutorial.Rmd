@@ -106,7 +106,7 @@ ln -sf /path-to-folder/CONSTAX/usearch8_1_1861_i86osx32 usearch8
 ```
 
 
-#### Run the Scripts.
+#### Run the Scripts:
 After installations of all the classifier programs, the tool is almost ready to use. The last step is to update the paths in the *config* file - specificallly, the location of the UNITE database, and the *otu.fasta* file. Within the *constax.sh* file, users need to update the path for the *config* file, the location of the installtion of the RDP Classifier, and the *rRNAClassifier.properties* file (part of the RDP Classifier installation). 
 
 
@@ -172,7 +172,7 @@ dev.off()
 
 ***
 
-## __Step 4:__ Troubleshooting
+## __Step 4:__ Troubleshooting.
 That's it, you're done! 
 
 You will know *constax.sh* is running because it writes each step onto the screen. With the test dataset of 500 OTUs, it will take about 10 minutes to train the classifiers, and generate the taxonomies. If running CONSTAX for multiple datasets, please note, it will write over the contents of *taxonomy_assignments* and *outputs* directories with each run. If users would like to save these files we recommend making a copy of the directory before rerunning CONSTAX.
